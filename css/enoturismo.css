@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,800 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box; 
+    text-decoration: none; 
+    list-style: none; 
+ }
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(  
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../imagenes/FondoEnoturismo.jpg);
+        background-position:  center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;       
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 5%;
+    left: 10%;
+    transform: translate(50%, -40%);
+    width: 60px;
+  
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    margin-top: -10%;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #540B14;
+}
+
+
+.menu-icono {
+    width: 60px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 17px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding:  11px 35px;
+    background-color: #540B14;
+    color: #c5c5c5;
+    text-transform: uppercases;
+    border-radius: 25px;    
+}
+
+.btn-1:hover {
+    background-color: #c5c5c5;
+    color: #540B14;
+}
+.enoturismo{
+    display: flex;
+}
+.enoturismo-1{
+
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    color: #e1e2e6;
+}
+
+.enoturismo-2{
+    background-image: url(../imagenes/5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.enoturismo-3{
+    background-image: url(../imagenes/4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.enoturismo-4{
+    background-image: url(../imagenes/vino4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px ;
+    color: #414247;
+    margin: 25px 0 45px 0;
+ 
+}
+
+@media screen and (max-width:1200px){
+    header{
+        padding: 4px;
+    }
+}
+@media screen and (max-width:700px){
+    .menu nav{
+        
+        background: #c5c5c5bc;
+        width: 125px;
+        height: 552px;
+        padding: 40px;
+        z-index: 1;
+        position: relative;
+        transition: 4s;
+    }
+   
+.menu ul{
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: -23px;
+
+}
+.menu ul li{
+    margin-top: -50px;
+    margin-left: -23px;
+
+}
+.menu ul li a{
+    color: #323337;
+    
+}
+#selected{
+    background: none;
+    padding: 0;
+    border-radius: none;
+    color: #540B14;
+}
+.menu nav img{
+    display: none;
+
+}
+.logo{
+    display: none;
+}
+#back_menu{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+#btn_menu{
+   display: none;
+   width: 50px;
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0.374);
+   font-size: 25px;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 300ms;
+}
+#btn_menu:hover{
+    background-color: rgba(255, 255, 255, 0.715);
+   }
+#back_menu{
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: rgba(0,0,0,0.5);
+display: none;
+}
+
+.header {
+    min-height: 0vh;
+}
+
+.header-content {
+    padding: 100px 30px;
+}
+
+.header-content p {
+    padding: 0;
+}
+
+.vinos {
+    padding: 30px;
+}
+
+.vinos-content h2 {
+    padding: 0;
+}
+
+.txt-p {
+    padding: 0;
+}
+.vinos-group {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.vinos-img {
+    display: none;
+}
+
+.fer {
+    padding: 30px;
+}
+.fer-content p {
+    padding: 0;
+}
+.fer-group {
+flex-direction: column;
+margin-bottom: 0;
+} 
+
+.fer-1 {
+margin-bottom: 25px;
+}
+
+.enoturismo{
+flex-direction: column;
+}
+
+.enoturismo-1{
+width: 100%;
+padding: 30px;
+text-align: center;
+}
+
+.enoturismo-2, .enoturismo-3 {
+display: none;
+}
+
+.Contacto{
+padding: 30px;
+}
+
+.Contacto-content {
+flex-direction: column;
+}
+
+.Contacto-1 {
+padding: 0;
+}
+
+.footer {
+padding: 30px;
+}
+
+.footer-content {
+flex-direction: column;
+text-align: center;
+}
+
+
+}
+
+
+
+
+
+
